@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean name="st1" class="com.data.collection.Student">
+		<property name="id">
+			<value>25</value>
+		</property>
+		<property name="name">
+			<value>Dhiraj</value>
+		</property>
+		<property name="city">
+			<list>
+				<value>Pune</value>
+				<value>Mumbai</value>
+			</list>
+		</property>
+		<property name="phoneNo">
+			<set>
+				<value>7709140598</value>
+				<value>9049226368</value>
+			</set>
+		</property>
+		<property name="course">
+			<map>
+				<entry key="Java" value="Development"></entry>
+				<entry key="Python" value="Machine learning"></entry>
+			</map>
+		</property>
+
+
+
+	</bean>
+	
+
+</beans>
